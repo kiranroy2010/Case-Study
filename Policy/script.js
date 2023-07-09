@@ -23,7 +23,7 @@ document.getElementById("loginForm").addEventListener("submit", function(event) 
   var password = document.getElementById("password").value;
 
   // Check if the entered username and password match the authentication credentials
-  if (username === "Kiranroy" && password === "Kiranroy") {
+  if (username === `${localStorage.getItem("customerName")}` && password === `${localStorage.getItem("password")}`) {
     // Authentication successful, redirect to the home page
     window.location.href = "index.html";
   } else {

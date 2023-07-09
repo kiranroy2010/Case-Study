@@ -20,6 +20,7 @@ label {
 }
 
 input[type="text"],
+input[type="password"],
 select {
   width: 100%;
   padding: 10px;
@@ -117,6 +118,10 @@ header {
   float: left;
 }
 
+.logo img{
+  width: 120px;
+}
+
 .header-component {
   float: left;
   width: fit-content;
@@ -194,7 +199,6 @@ header {
 
 button {
   padding: 10px 20px;
-  margin: 0 10px;
   font-size: 16px;
   background-color: #4caf50;
   color: #fff;

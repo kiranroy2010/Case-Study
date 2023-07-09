@@ -17,6 +17,10 @@ header {
   float: left;
 }
 
+.logo img{
+  width: 120px;
+}
+
 .header-component {
   float: left;
   width: fit-content;
