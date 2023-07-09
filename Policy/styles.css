@@ -1,0 +1,36 @@
+body {
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  color: #333;
+}
+
+.buttons {
+  margin-top: 20px;
+}
+
+button {
+  margin: 10px;
+}
+
+form {
+  display: inline-block;
+  text-align: left;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+}
+
+input, select {
+  margin-top: 5px;
+  width: 200px;
+}
+
+#selectedResult {
+  margin-top: 20px;
+  font-weight: bold;
+}

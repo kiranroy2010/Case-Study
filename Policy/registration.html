@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Insurance Portal - Registration</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <h1>Registration</h1>
+  <form id="registrationForm" onsubmit="selectPolicy()">
+    <label for="userId">User ID:</label>
+    <input type="text" id="userId" required>
+
+    <label for="policyType">Policy Type:</label>
+    <select id="policyType">
+      <option value="GeneralInsurance">General Insurance</option>
+      <option value="HealthInsurance">Health Insurance</option>
+      <option value="MotorInsurance">Motor Insurance</option>
+    </select>
+
+    <label for="policyTitle">Policy Title:</label>
+    <select id="policyTitle" onchange="displayPolicyDetails()">
+      <option value="Policy1">Policy 1</option>
+      <option value="Policy2">Policy 2</option>
+      <option value="Policy3">Policy 3</option>
+    </select>
+
+    <label for="sumAssured">Sum Assured:</label>
+    <input type="text" id="sumAssured" readonly>
+
+    <label for="premiumAmount">Premium Amount:</label>
+    <input type="text" id="premiumAmount" readonly>
+
+    <label for="policyTerm">Policy Term:</label>
+    <input type="text" id="policyTerm" readonly>
+
+    <button type="submit">Select Policy</button>
+  </form>
+  <script src="script.js"></script>
+</body>
+</html>

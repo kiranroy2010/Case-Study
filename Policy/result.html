@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Insurance Portal - Result</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <h1>Selected Result</h1>
+  <div id="selectedResult"></div>
+  <script src="script.js"></script>
+  <script>
+    // Retrieve stored data on the Result page
+document.addEventListener("DOMContentLoaded", function() {
+  var storedUserId = localStorage.getItem("userId");
+  var storedPolicyType = localStorage.getItem("policyType");
+  var storedPolicyTitle = localStorage.getItem("policyTitle");
+  var storedsumAssured = localStorage.getItem("sumAssured");
+  var storedpremiumAmount = localStorage.getItem("premiumAmount");
+  var storedpolicyTerm = localStorage.getItem("policyTerm");
+
+  if (storedUserId && storedPolicyType && storedPolicyTitle) {
+    var storedResult = "User ID: " + storedUserId + "<br>" +
+                       "Policy Type: " + storedPolicyType + "<br>" +
+                       "Policy Title: " + storedPolicyTitle + "<br>" +
+                       "Sum Assured: " + storedsumAssured + "<br>" +
+                       "Premium Amount: " + storedpremiumAmount + "<br>" +
+                       "Policy Term: " + storedpolicyTerm;
+                       
+
+    document.getElementById("selectedResult").innerHTML = storedResult;
+  }
+});
+  </script>
+</body>
+</html>

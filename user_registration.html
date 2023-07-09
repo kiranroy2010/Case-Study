@@ -95,6 +95,7 @@
     <script>
       // Save user details to local storage
       function saveUserDetails(name, email) {
+        localStorage.setItem("CustId", customerID)
         localStorage.setItem("customerName", name);
         localStorage.setItem("customerEmail", email);
       }
