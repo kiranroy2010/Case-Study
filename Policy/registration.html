@@ -3,22 +3,47 @@
 <head>
   <title>Insurance Portal - Registration</title>
   <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+  <header>
+    <div class="logo">
+      <img src="./assets/logo.png" alt="Logo">
+    </div>
+    <div class="header-component">
+      <div class="header-text">
+        <h1>ABC Insurance Company</h1>
+      </div>
+      <div class="header-text-small">
+        <h1>Reliable Fast Personable</h1>
+      </div>
+    </div>
+    <div class="right-component">
+      <h1 class="header-text-right">Contact Support</h1>
+      <div class="right-component-2">
+        <i style="font-size:24px" class="fa">&#xf095;</i>
+        <h1 class="header-text-right-2">+91 999999999</h1>
+      </div>
+      <div class="right-component-2">
+        <i style="font-size:24px" class="fa">&#xf0e0;</i>
+        <h1 class="header-text-right-2">ilp@tcs.com</h1>
+      </div>
+    </div>
+  </header>
   <h1>Registration</h1>
   <form id="registrationForm" onsubmit="selectPolicy()">
     <label for="userId">User ID:</label>
-    <input type="text" id="userId" required>
+    <input type="text" id="userId" required readonly>
 
     <label for="policyType">Policy Type:</label>
-    <select id="policyType">
+    <select id="policyType" required>
       <option value="GeneralInsurance">General Insurance</option>
       <option value="HealthInsurance">Health Insurance</option>
       <option value="MotorInsurance">Motor Insurance</option>
     </select>
 
     <label for="policyTitle">Policy Title:</label>
-    <select id="policyTitle" onchange="displayPolicyDetails()">
+    <select id="policyTitle" onchange="displayPolicyDetails()" required>
       <option value="Policy1">Policy 1</option>
       <option value="Policy2">Policy 2</option>
       <option value="Policy3">Policy 3</option>

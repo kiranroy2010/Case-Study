@@ -1,10 +1,39 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>Policy Listing</title>
   <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body>
+  <header>
+    <div class="logo">
+      <img src="./assets/logo.png" alt="Logo">
+    </div>
+    <div class="header-component">
+      <div class="header-text">
+        <h1>ABC Insurance Company</h1>
+      </div>
+      <div class="header-text-small">
+        <h1>Reliable Fast Personable</h1>
+      </div>
+    </div>
+    <div class="right-component">
+      <h1 class="header-text-right">Contact Support</h1>
+      <div class="right-component-2">
+        <i style="font-size:24px" class="fa">&#xf095;</i>
+        <h1 class="header-text-right-2">+91 999999999</h1>
+      </div>
+      <div class="right-component-2">
+        <i style="font-size:24px" class="fa">&#xf0e0;</i>
+        <h1 class="header-text-right-2">ilp@tcs.com</h1>
+      </div>
+    </div>
+  </header>
+  <hr style="width:100%;text-align:left;margin-left:0">
+  <h1 style="text-align:center;margin-left:0">Your Policies</h1>
   <div id="policy-list">
     <table>
       <thead>
@@ -88,26 +117,27 @@
           <td>₹700</td>
           <td>2023-07-01</td>
           <td>₹700,000</td>
-               <td>Registered</td>
-    </tr>
-    <tr>
-      <td>2308</td>
-      <td>2022-08-01</td>
-      <td>Active</td>
-      <td>Policy 8</td>
-      <td>₹800</td>
-      <td>2023-08-01</td>
-      <td>₹800,000</td>
-      <td>Not registered</td>
-    </tr>
-  </tbody>
-</table>
-<div id="pagination">
-  <a href="#" id="prev-link" onclick="previousPage()">&lt;&lt; Prev</a>
-  <a href="#" id="next-link" onclick="nextPage()">Next &gt;&gt;</a>
-</div>
-</div>
+          <td>Registered</td>
+        </tr>
+        <tr>
+          <td>2308</td>
+          <td>2022-08-01</td>
+          <td>Active</td>
+          <td>Policy 8</td>
+          <td>₹800</td>
+          <td>2023-08-01</td>
+          <td>₹800,000</td>
+          <td>Not registered</td>
+        </tr>
+      </tbody>
+    </table>
+    <div id="pagination">
+      <a href="#" id="prev-link" onclick="previousPage()">&lt;&lt; Prev</a>
+      <a href="#" id="next-link" onclick="nextPage()">Next &gt;&gt;</a>
+    </div>
+  </div>
 
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
+
 </html>

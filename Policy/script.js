@@ -12,7 +12,7 @@ function generateRandomUserId() {
 
 window.addEventListener("DOMContentLoaded", function() {
   var userIdInput = document.getElementById("userId");
-  userIdInput.value = generateRandomUserId();
+  userIdInput.value = localStorage.getItem("userId");
 });
 
 

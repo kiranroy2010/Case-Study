@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Insurance Portal - Result</title>
+  <title>Registration Acknowledgment</title>
   <link rel="stylesheet" type="text/css" href="styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -30,55 +30,55 @@
       </div>
     </div>
   </header>
-  <h1>Selected Result</h1>
-  <div id="selectedResult"></div>
+  <h1>Registration Acknowledgment</h1>
+  <div id="ackMessage"></div>
+  <div id="customerInfo"></div>
   <script src="script.js"></script>
   <script>
     // Retrieve stored data on the Result page
 document.addEventListener("DOMContentLoaded", function() {
-  var storedUserId = localStorage.getItem("userId");
-  var storedPolicyType = localStorage.getItem("policyType");
-  var storedPolicyTitle = localStorage.getItem("policyTitle");
-  var storedsumAssured = localStorage.getItem("sumAssured");
-  var storedpremiumAmount = localStorage.getItem("premiumAmount");
-  var storedpolicyTerm = localStorage.getItem("policyTerm");
 
-  if (storedUserId && storedPolicyType && storedPolicyTitle) {
+  
+  
     var storedResult = 
       `<table>
-         <tr>
-           <th>Field</th>
-           <th>Value</th>
-         </tr>
-         <tr>
+        <tr>
            <td>User ID :</td>
-           <td><strong>${storedUserId}</strong></td>
+           <td><strong>${localStorage.getItem("userId")}</strong></td>
          </tr>
          <tr>
-           <td>Policy Type :</td>
-           <td>${storedPolicyType}</td>
+           <td>Customer Name :</td>
+           <td>${localStorage.getItem("customerName")}</td>
          </tr>
          <tr>
-           <td>Policy Title :</td>
-           <td>${storedPolicyTitle}</td>
+           <td>Email :</td>
+           <td>${localStorage.getItem("email")}</td>
          </tr>
          <tr>
-           <td>Sum Assured :</td>
-           <td>${storedsumAssured}</td>
+           <td>Password :</td>
+           <td>${localStorage.getItem("password")}</td>
          </tr>
          <tr>
-           <td>Premium Amount :</td>
-           <td>${storedpremiumAmount}</td>
+           <td>Address :</td>
+           <td>${localStorage.getItem("address")}</td>
          </tr>
          <tr>
-           <td>Policy Term :</td>
-           <td>${storedpolicyTerm}</td>
+           <td>Nominee Name :</td>
+           <td>${localStorage.getItem("nomineeName")}</td>
+         </tr>
+         <tr>
+           <td>Relationship :</td>
+           <td>${localStorage.getItem("relationship")}</td>
+         </tr>
+         <tr>
+           <td>Contact Number :</td>
+           <td>${localStorage.getItem("contactNumber")}</td>
          </tr>
        </table>`;
                        
 
-    document.getElementById("selectedResult").innerHTML = storedResult;
-  }
+    document.getElementById("customerInfo").innerHTML = storedResult;
+  
 });
   </script>
 </body>
